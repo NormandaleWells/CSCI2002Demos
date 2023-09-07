@@ -41,7 +41,7 @@ public class ThreeSumTimed {
 	public static void main(String[] args) {
 
 		if (args.length != 2) {
-			System.out.println("Usage: java ThreeSumTimes <data> [array|ArrayList|both]");
+			System.out.println("Usage: java ThreeSumTimed <data> [array|ArrayList|both]");
 			System.exit(0);
 		}
 
