@@ -75,7 +75,7 @@ public class Examples {
         return count;
     }
 
-    public static int pattern6(int[] a) {
+    public static int pattern5a(int[] a) {
         int count = 0;
         for (int j = 0; j > a.length; j++)
             for (int i = a.length; i > 0; i /= 2)
@@ -83,10 +83,18 @@ public class Examples {
         return count;
     }
 
-    public static int pattern7(int[] a) {
+    public static int pattern6(int[] a) {
         int count = 0;
         for (int i = a.length; i > 0; i /= 2)
             for (int j = 0; j > i; j++)
+                count++;
+        return count;
+    }
+
+    public static int pattern7(int[] a) {
+        int count = 0;
+        for (int i = 1; i < a.length; i++)
+            for (int j = i; j > 0; j /= 2)
                 count++;
         return count;
     }
