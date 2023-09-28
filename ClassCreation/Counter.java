@@ -1,6 +1,11 @@
 // Adapted from _Algorithms, 4th edition_
 // by Sedgewick and Wayne, section 1.2.
 
+// A Counter is an object representating an integer
+// with a name that can be only incremented and
+// retrieved.  We can also use toString() to get
+// a text representation of the object.
+
 public class Counter {
 
     // Instance variables.
