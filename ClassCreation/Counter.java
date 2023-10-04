@@ -23,7 +23,7 @@ public class Counter {
     }
 
     // Instance method.
-    public int tally() {
+    public int getCount() {
         return count;
     }
 
