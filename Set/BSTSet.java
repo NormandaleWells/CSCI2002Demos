@@ -4,7 +4,7 @@ public class BSTSet<T extends Comparable<T>> implements Set<T> {
 
     private class Node {
         T key;
-        int height = 1;
+        // int height = 1;
         Node left = null;
         Node right = null;
 
@@ -16,10 +16,10 @@ public class BSTSet<T extends Comparable<T>> implements Set<T> {
     private Node root = null;
     private int numItems = 0;
 
-    private int computeHeight(Node n) {
-        if (n == null) return 0;
-        return Math.max(computeHeight(n.left), computeHeight(n.right)) + 1;
-    }
+    // private int computeHeight(Node n) {
+    //     if (n == null) return 0;
+    //     return Math.max(computeHeight(n.left), computeHeight(n.right)) + 1;
+    // }
 
     private Node add(Node r, T key) {
 
@@ -34,7 +34,7 @@ public class BSTSet<T extends Comparable<T>> implements Set<T> {
         else if (c > 0)
             r.right = add(r.right, key);
 
-        r.height = computeHeight(r);
+        // r.height = computeHeight(r);
         return r;
     }
 
