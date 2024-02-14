@@ -25,3 +25,7 @@ replay_pid*
 
 # VS Code directory
 .vscode/
+
+# CPP detritus
+*.obj
+*.exe
