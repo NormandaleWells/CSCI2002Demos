@@ -80,6 +80,8 @@ public class Sort {
 			return;
 		}
 
+		// if (hi - lo <= 1) return;
+
 		int mid = lo + (hi - lo) / 2;
 		mergeSort(a, aux, lo, mid, comp);
 		mergeSort(a, aux, mid, hi, comp);
@@ -134,13 +136,10 @@ public class Sort {
 	}
 
 	private static <T extends Comparable<T>> void quicksort(T[] a, int lo, int hi) {
-//		System.out.printf("quicksort([%d,%d],%d,%d)", a[0], a[1], lo, hi);
 		if ((hi - lo) <= 1) {
-//			System.out.println();
 			return;
 		}
 		int j = partition(a, lo, hi);
-//		System.out.printf(" -> %d\n", j);
 		quicksort(a, lo, j);
 		quicksort(a, j+1, hi);
 	}
